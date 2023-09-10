@@ -23,12 +23,12 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    
   }
   
   .countries {
     /* margin-bottom: 8rem; */
     display: flex;
-  
     font-size: 2rem;
     opacity: 1;
     transition: opacity 1s;
@@ -126,15 +126,26 @@
 
   /* Existing CSS styles for larger screens (default) */
 
-/* Add a media query for screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 481px) {
   body {
-    font-size: 16px; /* Adjust the font size for smaller screens */
+    font-size: 8px; /* Adjust the font size for smaller screens */
+  }
+  .countries{
+       flex-direction: column;
+       gap: 1.5rem;
+  }
+  .container{
+    /* display: block; */
+    flex-direction: column;
+    align-items: stretch;
+
   }
 
-  .countries {
-    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+   /* .countries {
+    font-size: 1.5rem; /* Adjust the font size for smaller screens 
   }
+   .countries
 
   .country {
     width: 100%; 
@@ -149,5 +160,5 @@
   .images img.parallel {
     width: 100%; 
     margin: 2rem 0;
-  }
-}
+  }*/
+}  
